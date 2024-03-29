@@ -12,11 +12,15 @@
     <title>Amadeus Solutions</title>
 </head>
 
+<header>
+    {% block header %}{% endblock %}
+</header>
+
 <body>
     {% include 'layouts/admin/menu.html' %}
-    <div class="content">
+   
         {% block contenido %}{% endblock %}
-    </div>
+    
 </body>
 
 
