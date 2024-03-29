@@ -14,7 +14,9 @@
 
 <body>
     {% include 'layouts/admin/menu.html' %}
-    
+    <div class="content">
+        {% block contenido %}{% endblock %}
+    </div>
 </body>
 
 
