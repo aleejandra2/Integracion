@@ -29,9 +29,6 @@
                         <a class="nav-link" href="{% url 'paginas' %}">Páginas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Historia</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'nosotros' %}">Nosotros</a>
                     </li>
                     <li class="nav-item">
@@ -45,7 +42,8 @@
         </div>
     </nav>
 
-    {% block contenido %}{% endblock %}
+    {% block contenido %}
+    {% endblock %}
 </body>
 </html>
 

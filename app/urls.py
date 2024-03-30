@@ -9,6 +9,6 @@ urlpatterns = [
     path('administrador/paginas', viewsAdmin.cargar_paginas, name='paginas'),
     path('administrador/contacto', viewsAdmin.cargar_contacto, name='contacto'),
     path('administrador/nosotros', viewsAdmin.cargar_nosotros, name='nosotros'),
-
+    path('administrador/notfound', viewsAdmin.not_found, name='notfound'),
 
     ]

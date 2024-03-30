@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Página no encontrada</title> <!-- Título de la página -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Añadido para centrar verticalmente */
+            height: 100vh; /* Añadido para ocupar toda la altura */
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px; /* Tamaño de fuente deseado */
+            margin-bottom: 20px; /* Espacio entre título e imagen */
+        }
+
+        .imagen {
+            width: 40%; /* Ancho deseado */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Oops! Página no encontrada.</h1> <!-- Título -->
+    <img src="{% static 'images/not_found.jpg' %}" class="imagen" alt="Not Found">
+</body>
+
+</html>

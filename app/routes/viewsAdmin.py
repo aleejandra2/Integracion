@@ -8,3 +8,6 @@ def cargar_contacto(request):
   
 def cargar_nosotros(request):
   return render(request, 'administrador/nosotros/index.html')  
+
+def not_found(request):
+  return render(request,'administrador/notfound/index.html')
