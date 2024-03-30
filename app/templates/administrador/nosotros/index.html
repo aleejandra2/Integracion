@@ -1,1 +1,123 @@
 {% extends 'base.html' %}
+
+
+{% load static %}
+
+
+{% block css %}
+<style>
+    .rounded-div {
+        border-radius: 15px;
+    }
+
+    /* Agrega bordes redondeados a la imagen */
+    .rounded-image {
+        border-radius: 15px;
+    }
+    .custom-border {
+        border: 4px solid #c1d3fe !important;
+        border-radius: 15px;
+    }
+    .background-image {
+        background-image: url("{% static 'images/fondo.jpeg' %}");
+        background-size: cover;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        z-index: -1;
+    }
+
+    #contenido {
+        margin-top: 290px;
+    }
+
+    .bg-color {
+        background-color: #d7e3fc;
+        border-radius: 10px;
+    }
+    .card-img-fixed {
+        width: 350px; /* Establece un ancho fijo para las imágenes */
+        height: 260px; /* Establece una altura fija para las imágenes */
+        object-fit: cover;
+    }
+    
+</style>
+{% endblock %}
+
+
+{% block header %}
+<header><div class="background-image mb-5"></div></header>
+
+{% endblock %}
+
+
+
+
+{% block contenido %}
+
+<div id="contenido" class="container">
+    
+    <div class="row gx-5 text-center custom-border mb-5">
+        <div class="col bg-color">
+            <div class="p-3">
+                <h1>Nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione commodi beatae aut eligendi nihil magnam animi voluptatum deleniti placeat non, quidem delectus inventore fuga accusamus corrupti rerum mollitia ipsam voluptatibus.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fuga, ducimus possimus rem molestias ex non quos dicta sit nobis amet! Repellendus repellat maiores tempore dolor quibusdam officiis, blanditiis aut!.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolorem, rerum consectetur necessitatibus nihil porro asperiores eveniet qui est ipsam nulla dicta quo quas? Quam, molestias! Eaque nam unde corrupti!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, nihil. Rem porro cumque in excepturi pariatur sapiente ad, explicabo, impedit deleniti obcaecati possimus laudantium optio nihil magni doloribus consequatur aliquam.</p>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row gx-5 text-center custom-border">
+        <div class="col bg-color">
+            <div class="p-3">
+                <h1>Equipo</h1>
+                <div class="row g-0 bg-body-secondary position-relative rounded-div mt-5">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                      <img src="{% static 'images/pipe.jpeg' %}" class="card-img-fixed rounded-image" alt="...">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                      <h5 class="mt-0">Columns with stretched link</h5>
+                      <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                    </div>
+                </div>
+                <div class="row g-0 bg-body-secondary position-relative rounded-div mt-5">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                      <img src="{% static 'images/milla.jpeg' %}" class="card-img-fixed rounded-image" alt="...">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                      <h5 class="mt-0">Columns with stretched link</h5>
+                      <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                    </div>
+                </div>
+                <div class="row g-0 bg-body-secondary position-relative rounded-div mt-5">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                      <img src="{% static 'images/Alee.jpeg' %}" class="card-img-fixed rounded-image" alt="...">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                      <h5 class="mt-0">Columns with stretched link</h5>
+                      <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                    </div>
+                </div>
+                <div class="row g-0 bg-body-secondary position-relative rounded-div mt-5">
+                    <div class="col-md-6 mb-md-0 p-md-4">
+                      <img src="{% static 'images/tonona.jpg' %}" class="card-img-fixed rounded-image" alt="...">
+                    </div>
+                    <div class="col-md-6 p-4 ps-md-0">
+                      <h5 class="mt-0">Columns with stretched link</h5>
+                      <p>Another instance of placeholder content for this other custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    </div>
+</div>
+{% endblock %}
