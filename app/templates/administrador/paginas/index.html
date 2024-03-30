@@ -4,29 +4,35 @@
 
 {% block css %}
 <style>
+    .custom-border {
+        border: 4px solid #c1d3fe !important;
+        border-radius: 15px;
+    }
     .background-image {
         background-image: url("{% static 'images/fondo.jpeg' %}");
         background-size: cover;
         position: absolute;
-        top: 60px; /* Altura del navbar en base.html */
+        top: 60px;
         left: 0;
         width: 100%;
-        height: 50%; /* Ajusta la altura según tus necesidades */
+        height: 50%;
         z-index: -1;
     }
 
     #contenido {
-        margin-top: 290px; /* Espacio entre el navbar y el contenido */
+        margin-top: 290px;
     }
 
     .card-img-fixed {
-        width: 100%; /* Establece el ancho de la imagen al 100% */
-        height: 300px; /* Establece la altura deseada para las imágenes de las tarjetas */
-        object-fit: cover; /* Ajusta la imagen para que cubra toda el área asignada */
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
     }
     .bg-color {
-        background-color: #d7e3fc; /* Establece el color de fondo deseado */
+        background-color: #edf2fb;
+        border-radius: 10px;
     }
+    
     
 </style>
 {% endblock %}
@@ -44,7 +50,7 @@
 
 <div id="contenido" class="container">
     
-    <div class="row gx-5 text-center border border-4">
+    <div class="row gx-5 text-center custom-border">
         <div class="col bg-color">
             <div class="p-3">
                 <h1>Páginas</h1>
@@ -57,7 +63,7 @@
                 <img src="{% static 'images/P1.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Página 1</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio, autem eius cupiditate pariatur nisi. Ex dignissimos aliquid qui. Labore, laudantium aliquam omnis eligendi tempore non repellendus necessitatibus alias eos!</p>
                     <a href="">Detalles</a>
                 </div>
             </div>
@@ -67,7 +73,7 @@
                 <img src="{% static 'images/P2.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Página 2</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae itaque cumque aspernatur cum sint voluptatum laudantium repudiandae in qui nemo explicabo, officia aliquam eveniet quae laborum inventore, amet vel.</p>
                     <a href="">Detalles</a>
                 </div>
             </div>
@@ -77,7 +83,7 @@
                 <img src="{% static 'images/P3.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Página 3</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, voluptatibus quaerat. Voluptas sint illo, debitis facilis ipsa aut laudantium optio quis odio obcaecati fugiat provident laboriosam sapiente sequi doloremque excepturi!</p>
                     <a href="">Detalles</a>
                 </div>
             </div>
@@ -87,7 +93,7 @@
                 <img src="{% static 'images/P4.jpg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Página 4</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt distinctio itaque delectus, perferendis placeat rerum, asperiores voluptatum deserunt atque cupiditate aliquam debitis voluptate praesentium quam accusantium nemo maiores ipsum. Atque!</p>
                     <a href="">Detalles</a>
                 </div>
             </div>
@@ -98,7 +104,7 @@
                 <img src="{% static 'images/P5.jpg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Página 5</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe id accusantium quaerat ratione molestiae aperiam enim facilis dolor vel quis, accusamus, vitae aspernatur fuga sed consectetur, voluptas beatae. Quia, deserunt.</p>
                     <a href="">Detalles</a>
                 </div>
             </div>
@@ -106,30 +112,30 @@
 
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
+                <img src="{% static 'images/P6.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Página 6</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laboriosam fuga quas ut id, tempore aut excepturi temporibus nihil! Possimus, aliquam. Aperiam tenetur sint nisi esse dolor cum provident soluta?</p>
                     <a href="">Detalles</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
+                <img src="{% static 'images/P6.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Página 7</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae harum veniam quisquam blanditiis ad, maiores fuga explicabo omnis debitis consequuntur nesciunt officia dicta dolores tenetur sit ab. Consectetur, cumque veritatis..</p>
                     <a href="">Detalles</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
+                <img src="{% static 'images/P6.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Página 8</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aliquid nulla vero voluptates eveniet necessitatibus tempore, perferendis reprehenderit non inventore molestiae ullam qui pariatur in doloribus eaque quos magni rem?</p>
                     <a href="">Detalles</a>
                 </div>
             </div>
