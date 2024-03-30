@@ -5,7 +5,7 @@
 {% block css %}
 <style>
     .background-image {
-        background-image: url("{% static 'images/card.jpeg' %}");
+        background-image: url("{% static 'images/fondo.jpeg' %}");
         background-size: cover;
         position: absolute;
         top: 60px; /* Altura del navbar en base.html */
@@ -17,6 +17,15 @@
 
     #contenido {
         margin-top: 290px; /* Espacio entre el navbar y el contenido */
+    }
+
+    .card-img-fixed {
+        width: 100%; /* Establece el ancho de la imagen al 100% */
+        height: 300px; /* Establece la altura deseada para las imágenes de las tarjetas */
+        object-fit: cover; /* Ajusta la imagen para que cubra toda el área asignada */
+    }
+    .bg-color {
+        background-color: #d7e3fc; /* Establece el color de fondo deseado */
     }
     
 </style>
@@ -36,7 +45,7 @@
 <div id="contenido" class="container">
     
     <div class="row gx-5 text-center border border-4">
-        <div class="col bg-white">
+        <div class="col bg-color">
             <div class="p-3">
                 <h1>Páginas</h1>
             </div>
@@ -45,75 +54,83 @@
     <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top" alt="...">
+                <img src="{% static 'images/P1.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Página 1</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="">Detalles</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top" alt="...">
+                <img src="{% static 'images/P2.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Página 2</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                    <a href="">Detalles</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top" alt="...">
+                <img src="{% static 'images/P3.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Página 3</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="">Detalles</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top" alt="...">
+                <img src="{% static 'images/P4.jpg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Página 4</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="">Detalles</a>
                 </div>
             </div>
         </div>
 
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top" alt="...">
+                <img src="{% static 'images/card.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Página 5</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="">Detalles</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100">
+                <img src="{% static 'images/card.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Página 6</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="">Detalles</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top" alt="...">
+                <img src="{% static 'images/card.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Página 7</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="">Detalles</a>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card h-100">
-                <img src="{% static 'images/card.jpeg' %}" class="card-img-top" alt="...">
+                <img src="{% static 'images/card.jpeg' %}" class="card-img-top card-img-fixed" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">Página 8</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="">Detalles</a>
                 </div>
             </div>
         </div>
