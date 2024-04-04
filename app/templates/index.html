@@ -1,6 +1,6 @@
 {% extends 'layouts/admin/menu.html' %}
 
-{% extends 'app/static/css/admin.css'}
+<!-- {% extends 'app/static/css/admin.css'} -->
 
 {% load static %}
 
@@ -87,6 +87,21 @@
         </div>
     </div>
 
+    <div class="banner-lateral" id="bannerLateral">
+        <button class="cerrar-anuncio" onclick="cerrarAnuncio()">X</button>
+        <img src="{% static 'images/tonona.jpg' %}" alt="Anuncio">
+        <h2>Anuncio Lateral</h2>
+        <p>¡Compra ahora y obtén un 20% de descuento!</p>
+        <a href="#">Comprar ahora</a>
+    </div>
+
+    <div class="banner-inferior" id="bannerInferior">
+        <button class="cerrar-anuncio-btn" onclick="cerrarAnuncio()">x</button>
+        <img src="{% static 'images/fondo.jpeg' %}" alt="Anuncio">
+        <h2>Anuncio Inferior</h2>
+        <p>¡Compra ahora y obtén un 20% de descuento!</p>
+        <a href="#">Comprar ahora</a>
+    </div>
 
     <!-- Footer -->
 
@@ -97,3 +112,5 @@
 </div>
 
 {% endblock %}
+
+
