@@ -1,19 +1,8 @@
 // banner.js
-document.addEventListener("DOMContentLoaded", function() {
-    var cerrarBoton = document.querySelector(".cerrar-anuncio");
-    var banner = document.getElementById("bannerLateral");
+function cerrarAnuncio(boton) {
+    var banner = boton.parentNode;
 
-    cerrarBoton.addEventListener("click", function() {
+    if (banner) {
         banner.style.display = "none";
-    });
-});
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    var cerrarBoton = document.querySelector(".cerrarBanner");
-    var baner = document.getElementById("banner-inferior");
-
-    cerrarBoton.addEventListener("click", function() {
-        baner.style.display = "none";
-    });
-});
+    }
+}
